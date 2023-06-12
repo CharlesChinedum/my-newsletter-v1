@@ -61,7 +61,7 @@ app.post("/failure", (req, res) => {
   res.redirect("/");
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("speak chief, I am listening on port 3000");
 });
 // c5d80a09849ab6c9c4bfd5c66bb5f5c8-us21
